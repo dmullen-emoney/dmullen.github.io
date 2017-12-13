@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Font awesome icon in a circle</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background: #FFF;
+		}
+		
+		i { 
+			color: #F35426;
+			margin-right: 8px;
+			/*padding-top: 8px; */
+			font-size: 20px !important;
+		}
+		
+		p {
+			margin: 0;
+			padding-top: 2px;
+		}
+		
+		
+		section {
+			  display: flex;
+			  background: #fff;
+			  border: 1px solid #E5E5E5;
+			  width: 210px;
+			  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			  color: #333;
+			  font-size: 14px;
+			  padding: 8px 10px 8px 10px;;
+			  -webkit-box-shadow: 0px 1px 2px 0px rgba(78,77,77,0.5);
+			  -moz-box-shadow: 0px 1px 2px 0px rgba(78,77,77,0.5);
+			  box-shadow: 0px 1px 2px 0px rgba(78,77,77,0.5);
+			  border: 1px solid #E5E5E5;
+			  cursor: pointer;
+			}
+		@-webkit-keyframes fade-out {
+			100% {-webkit-transform: scale(0.4); opacity: 0;}
+			}
+		@-webkit-keyframes fade-in {
+			100% {-webkit-transform: scale(1.0); opacity: 1;}
+			}
+		.fade-out:hover {
+			-webkit-animation: fade-out .3s ease-in;
+			-webkit-animation-fill-mode: forwards;
+			opacity: 1;
+		}
+		.fade-in {
+			opacity: 0;
+		}
+		.fade-in:hover {
+			-webkit-animation: fade-in .2s ease-in;
+			-webkit-animation-fill-mode: forwards;
+			opacity: 0;
+			-webkit-transform: scale(0.4);
+		}
+	</style>
+	<meta name="viewport" content="width=device-width"> 
+</head>
+
+<body>
+	<span>Fade out</span>
+    <section class="fade-out one">
+	  <a href="#">
+		<i class="fa fa-file-powerpoint-o fa-sm" aria-hidden="true" title=""></i>
+	  </a>
+	  <p>Fidelity Statement 6/18/2017</p>
+	</section>
+	<div style="height: 40px;"></div>
+	<span>Fade in</span>
+    <section class="fade-in two">
+	  <a href="#">
+		<i class="fa fa-file-powerpoint-o fa-sm" aria-hidden="true" title=""></i>
+	  </a>
+	  <p>Fidelity Statement 6/18/2017</p>
+	</section>
+</body>
+</html>
