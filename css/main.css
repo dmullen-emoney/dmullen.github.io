@@ -24,13 +24,16 @@ body {
 }
 ul {
     padding: 0;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #e7e7e7;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
 }
+.blurb {
+    margin-bottom: 30px;
+}
 .blurb li {
     list-style: none;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #e7e7e7;
 }
 .blurb li:last-of-type {
     border-bottom: none;
@@ -40,10 +43,21 @@ a {
     color: #3272a9;
     font-size: 14px;
     display: block;
-    padding: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
 }
 a:hover {
     background-color: #f0f8ff;
     color: #1f3444;
+}
+.th {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    border-color: #e7e7e7;
 }
 
